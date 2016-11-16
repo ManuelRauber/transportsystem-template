@@ -4,3 +4,12 @@
   <li>Kommando senden</li>
   <li>Kommando empfangen?</li>
 </ol>
+
+<button type="button" class="btn btn-primary" (click)="connect()">Connect</button>
+
+<input type="text" placeholder="Kommando" [(ngModel)]="command">
+<button type="button" class="btn" (click)="send()">Senden</button>
+
+<ul>
+  <li *ngFor="let h of history">{{ h }}</li>
+</ul>
